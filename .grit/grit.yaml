@@ -4,6 +4,8 @@ patterns:
     description: Removes all console.log statements
     tags: ['style', 'debugging']
     enabled: true
+    body: |
+      `console.log($any)` => .
   - name: PatternWithBody
     body: '`sum($a, $b)` => `sum([$a, $b])`'
   - name: RemovalPattern
