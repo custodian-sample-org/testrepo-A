@@ -1,4 +1,4 @@
-pattern FixSkippedTests = `$testlike.only` => `$testlike` where {
+pattern FixSkippedTests() = `$testlike.only` => `$testlike` where {
   `$testlike` <: or {
     `describe`
     `it`
@@ -6,7 +6,7 @@ pattern FixSkippedTests = `$testlike.only` => `$testlike` where {
   }
 }
 
-pattern FixSkippedTests2 = `$testlike.only` => `$testlike` where {
+pattern FixSkippedTests2() = `$testlike.only` => `$testlike` where {
   `$testlike` <: or {
     `describe`
     `it`
