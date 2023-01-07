@@ -7,7 +7,7 @@ Remove `console.error` statements.
 
 tags: #good
 
-```
+```grit
 `console.error($arg)` => . where {
   $arg <: not within CatchClause()
 }
